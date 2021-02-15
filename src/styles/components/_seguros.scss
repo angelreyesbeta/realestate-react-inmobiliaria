@@ -1,0 +1,43 @@
+.container-seguros{
+   
+    background-color: darken($color: $primary, $amount: 15);
+    
+    
+}
+
+.__seguro_ColorsIcons{
+    text-align: center;
+    
+}
+
+.material-icons{
+    font-size: 80px;
+    color: white;
+    text-align: center;
+}
+
+.__seguro_margenes{
+    height: 150px;
+    margin-bottom: 5px;
+    padding-right: 20px;
+}
+
+@media (max-width: 600px) {
+  
+    .__seguro_margenes{
+        height: 300px;
+        margin-bottom: 5px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 321px) {
+  
+    .__seguro_margenes{
+        height: 400px;
+        margin-bottom: 5px;
+        padding-right: 20px;
+    }
+}
+
+

@@ -1,0 +1,14 @@
+.page-footer{
+   
+    bottom: 0px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.__footer_enlace{
+    color: $primary;
+}
+.__footer_enlace:hover{
+
+    color: $primary !important;
+}

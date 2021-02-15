@@ -1,0 +1,49 @@
+.h{
+    
+    width:100%;
+    
+}
+
+.vl {
+    border-left: 1.5px solid darken($color: $primary, $amount: 20);
+    height: 150px;
+    text-align: center;
+    margin-left: 50%;
+  }
+
+  .icon-facebook,.icon-twitter,.icon-instagram{
+      font-size: 3.5em;
+      background-color: $black;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 80px;
+      border-radius: 50%;
+      padding:10px;
+      margin-right: 20px;
+      margin-top: 30px;
+     
+  }
+  a{
+    transition: all .5s; 
+  }
+a:hover{
+    transform: translateY(-10px);
+    text-decoration: none;
+}
+
+.icon-facebook:hover{
+    text-decoration: none;
+    background-color: $primary;
+
+}
+.icon-instagram:hover{
+    background-color: $primary;
+}
+.icon-twitter:hover{
+    background-color: $primary;
+}
+
+

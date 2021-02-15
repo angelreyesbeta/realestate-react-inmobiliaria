@@ -1,0 +1,82 @@
+
+
+.__property_contenedor{
+    background-color: $primary;
+    height: 170px;
+}
+
+/*Estilos de banner*/
+
+
+
+
+
+/* style card */
+
+.card{
+    transition: all .5s; 
+    
+}
+.card:hover{
+    
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  
+}
+
+.card-img{
+    max-width: 100%;
+    object-fit: cover;
+    height: 200px;
+    
+}
+.card-title-mayuscula{
+
+    text-transform: uppercase;
+   
+}
+
+.card-canon{
+    font-size: 1.5em;
+}
+
+
+.card-header .card-h5-codigo{
+
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+ 
+    color:white;
+    font-weight: bold;
+    text-align: center;
+
+}
+.card .card-header{
+    background-color: $primary;
+    
+}
+.span-bold{
+    font-weight: bold;
+}
+.card-link{
+    color: $primary;
+    font-weight: bold;
+}
+.card-link:hover{
+   color: tomato;
+}
+.card-barrio{
+    font-size: 0.8em;
+    color:gray;
+    font-weight: bold;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+    
+}
+
+
+
+

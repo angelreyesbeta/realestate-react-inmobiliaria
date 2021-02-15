@@ -1,0 +1,177 @@
+
+.container{
+  width: 95%;
+  max-width: 1000px;
+  margin:0 auto
+}
+
+#header1{
+  background-color: transparent;
+  color: white;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  transition: all 0.5s;
+  
+}
+#header2{
+  background-color: rgba(0,0,0,0.9);
+  color: white;
+  padding: 1em 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2000;
+  transition: all 0.5s;
+
+  
+}
+
+
+header::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.logo{
+  float: right;
+  font-size: 2rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.logo span{
+  font-weight: 100;
+  color: white;
+}
+
+.site-nav{
+  top: 100%;
+  left:0;
+  position: absolute;
+  background-color: rgba(0,0,0,0.9);
+  clip-path: circle(0px at top left);
+  transition: clip-path ease-in-out 500ms;
+    
+}
+.site-nav-open{
+  clip-path: circle(150% at top left);
+}
+.site-nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-nav li{
+  /* border-bottom: 1px solid $primary; */
+}
+.site-nav li:last-child{
+  border-bottom: none;
+}
+
+.site-nav a{
+  color: white;
+  display: block;
+  padding:1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
+
+.site-nav a:hover{
+  background-color: $primary;
+  color: white;
+
+}
+
+.menu-toggle{
+
+  padding:1em;
+  position: absolute;
+  top: .5em;
+  left: .5em;
+  cursor: pointer;
+}
+.menu-open .hamburger{
+  transform: rotate(45deg);
+}
+.menu-open .hamburger::before{
+  opacity: 0;
+}
+.menu-open .hamburger::after{
+  transform: translateY(-3px) rotate(-90deg);
+}
+.hamburger,
+.hamburger::before,
+.hamburger::after{
+  content:'';
+  display: block;
+  background-color: white;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+.hamburger::before{
+  transform: translateY(-6px);
+}
+.hamburger::after{
+  transform: translateY(3px);
+}
+
+
+@media (min-width:1024px){
+    
+  .menu-toggle{
+      display: none;
+  }
+  .site-nav{
+      height: auto;
+      position: relative;
+      background-color: transparent;
+      float: left;
+      margin-left: 15px;
+      clip-path: initial;
+
+      
+      
+  }
+  .site-nav li{
+      display: inline-block;
+      border: none;
+      font-size: 1rem;
+      
+      
+      
+  }
+  .site-nav a{
+      padding: 0px;
+      margin-right: 2em;
+      color: white;
+      font-weight: bold;
+      transition: all  0.5s ;
+  }
+ 
+ 
+  .site-nav a:hover{
+
+      background-color: transparent;
+      color: white; 
+      transform: scale(1.2);
+      border-bottom: 1px solid $primary 
+  }
+
+  .selectFocus{
+      /* background-color: transparent;
+      color: white; 
+      transform: scale(1.2);
+      transition: all  0.5s ;
+      border-bottom: 1px solid $primary  */
+      
+  }
+
+ 
+
+}
